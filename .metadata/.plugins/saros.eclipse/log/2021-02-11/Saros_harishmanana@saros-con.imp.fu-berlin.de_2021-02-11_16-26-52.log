@@ -1,0 +1,36 @@
+INFO  16:26:13,172 [dpp-connect-auto] (?:?) Starting Saros 15.0.0 running:
+  Java Version: 11.0.5
+  Java Vendor: Oracle Corporation
+  Eclipse Runtime Version: 3.17.0.v20191122-2104
+  Operating System: Windows 10 (10.0)
+  Hardware Architecture: amd64
+INFO  16:26:13,256 [dpp-connect-auto] (?:?) initializing context...
+INFO  16:26:14,057 [dpp-connect-auto] (?:?) initializing preference default values
+INFO  16:26:14,151 [dpp-connect-auto] (?:?) successfully initialized context
+ERROR 16:26:51,816 [dpp-connect-auto] (?:?) error sending STUN request
+java.net.SocketException: Network is unreachable: Datagram send failed
+	at java.base/java.net.DualStackPlainDatagramSocketImpl.socketSend(Native Method)
+	at java.base/java.net.DualStackPlainDatagramSocketImpl.send(DualStackPlainDatagramSocketImpl.java:136)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at saros.net.stun.internal.StunServiceImpl$StunDiscovery$1.run(StunServiceImpl.java:233)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+ERROR 16:26:51,816 [dpp-connect-auto] (?:?) error sending STUN request
+java.net.SocketException: Network is unreachable: Datagram send failed
+	at java.base/java.net.DualStackPlainDatagramSocketImpl.socketSend(Native Method)
+	at java.base/java.net.DualStackPlainDatagramSocketImpl.send(DualStackPlainDatagramSocketImpl.java:136)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at saros.net.stun.internal.StunServiceImpl$StunDiscovery$1.run(StunServiceImpl.java:233)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+ERROR 16:26:51,816 [dpp-connect-auto] (?:?) error sending STUN request
+java.net.SocketException: Network is unreachable: Datagram send failed
+	at java.base/java.net.DualStackPlainDatagramSocketImpl.socketSend(Native Method)
+	at java.base/java.net.DualStackPlainDatagramSocketImpl.send(DualStackPlainDatagramSocketImpl.java:136)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:695)
+	at saros.net.stun.internal.StunServiceImpl$StunDiscovery$1.run(StunServiceImpl.java:233)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+WARN  16:27:01,989 [StunDiscovery-192.168.32.209] (StunServiceImpl.java:384) received no response from STUN server stunserver.org/67.227.226.240:3478 at local address /192.168.32.209:0
+WARN  16:27:01,989 [StunDiscovery-172.31.128.1] (StunServiceImpl.java:384) received no response from STUN server stunserver.org/67.227.226.240:3478 at local address /172.31.128.1:0
+WARN  16:27:01,989 [StunDiscovery-10.0.75.1] (StunServiceImpl.java:384) received no response from STUN server stunserver.org/67.227.226.240:3478 at local address /10.0.75.1:0
+WARN  16:27:01,989 [StunDiscovery-192.168.0.105] (StunServiceImpl.java:384) received no response from STUN server stunserver.org/67.227.226.240:3478 at local address /192.168.0.105:0
+INFO  17:03:59,750 [dpp-shutdown] (ContainerContext.java:209) disposing context...
+INFO  17:03:59,755 [dpp-shutdown] (ContainerContext.java:213) successfully disposed context
